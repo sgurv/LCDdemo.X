@@ -13,11 +13,11 @@
   Description:
     This header file provides implementations for pin APIs for all pins selected in the GUI.
     Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.4
+        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.6
         Device            :  PIC16F19176
         Driver Version    :  2.11
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.20 and above
+        Compiler          :  XC8 2.30 and above
         MPLAB             :  MPLAB X 5.40
 
     Copyright (c) 2013 - 2015 released Microchip Technology Inc.  All rights reserved.
@@ -98,19 +98,19 @@ void PIN_MANAGER_Initialize(void)
     /**
     TRISx registers
     */
-    TRISE = 0x07;
+    TRISE = 0x00;
     TRISA = 0x00;
-    TRISB = 0xEF;
-    TRISC = 0x9F;
-    TRISD = 0xFF;
+    TRISB = 0xC0;
+    TRISC = 0x03;
+    TRISD = 0x00;
 
     /**
     ANSELx registers
     */
     ANSELD = 0xFF;
-    ANSELC = 0x5C;
+    ANSELC = 0xDC;
     ANSELB = 0xFF;
-    ANSELE = 0x03;
+    ANSELE = 0x07;
     ANSELA = 0xDF;
 
     /**
@@ -156,8 +156,6 @@ void PIN_MANAGER_Initialize(void)
    
     
 	
-		
-    RX1PPS = 0x17;   //RC7->EUSART1:RX1;    
 		
     RC6PPS = 0x0D;   //RC6->EUSART1:TX1;    
 }

@@ -13,11 +13,11 @@
   @Description
     This source file provides APIs for RTCC.
     Generation Information :
-        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.4
+        Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.6
         Device            :  PIC16F19176
         Driver Version    :  2.10
     The generated drivers are tested against the following:
-        Compiler          :  XC8 2.20 and above
+        Compiler          :  XC8 2.30 and above
         MPLAB 	          :  MPLAB X 5.40
 */
 
@@ -89,10 +89,6 @@ void RTCC_Initialize(void)
     // CAL 0; 
     RTCCAL = 0x00;
     
-    // Enable RTCC
-    RTCCONbits.RTCEN = 1;
-    while(!RTCCONbits.RTCEN);
-
     // Disable write operations on RTCC timer registers
     __builtin_clear_RTCWREN();
 

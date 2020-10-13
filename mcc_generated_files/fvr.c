@@ -1,21 +1,24 @@
 /**
-  Generated Main Source File
+  FVR Generated Driver File
 
-  Company:
+  @Company
     Microchip Technology Inc.
 
-  File Name:
-    main.c
+  @File Name
+    fvr.c
 
-  Summary:
-    This is the main file generated using PIC10 / PIC12 / PIC16 / PIC18 MCUs
+  @Summary
+    This is the generated driver implementation file for the FVR driver using PIC10 / PIC12 / PIC16 / PIC18 MCUs
 
-  Description:
-    This header file provides implementations for driver APIs for all modules selected in the GUI.
+  @Description
+    This source file provides APIs for FVR.
     Generation Information :
         Product Revision  :  PIC10 / PIC12 / PIC16 / PIC18 MCUs - 1.81.6
         Device            :  PIC16F19176
-        Driver Version    :  2.00
+        Driver Version    :  2.01
+    The generated drivers are tested against the following:
+        Compiler          :  XC8 2.30 and above
+        MPLAB             :  MPLAB X 5.40
 */
 
 /*
@@ -41,43 +44,28 @@
     SOFTWARE.
 */
 
-#include "mcc_generated_files/mcc.h"
+/**
+  Section: Included Files
+*/
 
-/*
-                         Main application
- */
-void main(void)
+#include <xc.h>
+#include "fvr.h"
+
+/**
+  Section: FVR APIs
+*/
+
+void FVR_Initialize(void)
 {
-    // initialize the device
-    SYSTEM_Initialize();
+    // CDAFVR 2x; FVREN enabled; TSRNG Lo_range; ADFVR 2x; TSEN disabled; 
+    FVRCON = 0x8A;
+}
 
-    // When using interrupts, you need to set the Global and Peripheral Interrupt Enable bits
-    // Use the following macros to:
-
-    // Enable the Global Interrupts
-    //INTERRUPT_GlobalInterruptEnable();
-
-    // Enable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptEnable();
-
-    // Disable the Global Interrupts
-    //INTERRUPT_GlobalInterruptDisable();
-
-    // Disable the Peripheral Interrupts
-    //INTERRUPT_PeripheralInterruptDisable();
-
-    while (1)
-    {
-        // Add your application code
-        LCD_DIG_SYM00Num(8);
-        LCD_DIG_SYM01Num(8);
-        LCD_DIG_SYM02Num(8);
-        LCD_DIG_SYM03Num(8);
-        LCD_DIG_SYM04Num(8);
-        LCD_DIG_SYM05Num(8);
-        __delay_ms(500);
-    }
+bool FVR_IsOutputReady(void)
+{
+    return (FVRCONbits.FVRRDY);
 }
 /**
  End of File
 */
+
