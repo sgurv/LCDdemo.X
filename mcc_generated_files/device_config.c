@@ -51,7 +51,7 @@
 #pragma config RSTOSC = HFINTPLL    // Power-up default value for COSC bits->HFINTOSC with 2x PLL, with OSCFRQ = 16 MHz and CDIV = 1:1 (FOSC = 32 MHz)
 #pragma config CLKOUTEN = OFF    // Clock Out Enable bit->CLKOUT function is disabled; i/o or oscillator function on OSC2
 #pragma config VBATEN = OFF    // VBAT Pin Enable bit->VBAT functionality is disabled
-#pragma config LCDPEN = ON    // LCD Charge Pump Mode bit->LCD Charge Pump is enabled
+#pragma config LCDPEN = OFF    // LCD Charge Pump Mode bit->LCD Charge Pump is disabled.
 #pragma config CSWEN = ON    // Clock Switch Enable bit->Writing to NOSC and NDIV is allowed
 #pragma config FCMEN = ON    // Fail-Safe Clock Monitor Enable bit->FSCM timer enabled
 

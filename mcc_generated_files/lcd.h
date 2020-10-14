@@ -162,6 +162,48 @@
 #define BAR1_SYM15      LCDDATA12bits.S00C2
 #define BAR2_SYM16      LCDDATA18bits.S02C3
 #define BAR3_SYM17      LCDDATA12bits.S02C2
+#define CHAR_SYM18A      LCDDATA20bits.S20C3
+#define CHAR_SYM18B      LCDDATA21bits.S25C3
+#define CHAR_SYM18C      LCDDATA15bits.S25C2
+#define CHAR_SYM18D      LCDDATA3bits.S26C0
+#define CHAR_SYM18E      LCDDATA20bits.S19C3
+#define CHAR_SYM18F      LCDDATA14bits.S19C2
+#define CHAR_SYM18G      LCDDATA14bits.S20C2
+#define CHAR_SYM19A      LCDDATA21bits.S24C3
+#define CHAR_SYM19B      LCDDATA19bits.S11C3
+#define CHAR_SYM19C      LCDDATA13bits.S11C2
+#define CHAR_SYM19D      LCDDATA0bits.S07C0
+#define CHAR_SYM19E      LCDDATA18bits.S06C3
+#define CHAR_SYM19F      LCDDATA12bits.S06C2
+#define CHAR_SYM19G      LCDDATA15bits.S24C2
+#define CHAR_SYM20A      LCDDATA19bits.S10C3
+#define CHAR_SYM20B      LCDDATA21bits.S31C3
+#define CHAR_SYM20C      LCDDATA15bits.S31C2
+#define CHAR_SYM20D      LCDDATA4bits.S33C0
+#define CHAR_SYM20E      LCDDATA22bits.S34C3
+#define CHAR_SYM20F      LCDDATA16bits.S34C2
+#define CHAR_SYM20G      LCDDATA13bits.S10C2
+#define CHAR_SYM21A      LCDDATA19bits.S08C3
+#define CHAR_SYM21B      LCDDATA19bits.S09C3
+#define CHAR_SYM21C      LCDDATA13bits.S09C2
+#define CHAR_SYM21D      LCDDATA3bits.S27C0
+#define CHAR_SYM21E      LCDDATA22bits.S32C3
+#define CHAR_SYM21F      LCDDATA16bits.S32C2
+#define CHAR_SYM21G      LCDDATA13bits.S08C2
+#define CHAR_SYM22A      LCDDATA21bits.S30C3
+#define CHAR_SYM22B      LCDDATA21bits.S29C3
+#define CHAR_SYM22C      LCDDATA15bits.S29C2
+#define CHAR_SYM22D      LCDDATA0bits.S02C0
+#define CHAR_SYM22E      LCDDATA18bits.S03C3
+#define CHAR_SYM22F      LCDDATA12bits.S03C2
+#define CHAR_SYM22G      LCDDATA15bits.S30C2
+#define CHAR_SYM23A      LCDDATA21bits.S28C3
+#define CHAR_SYM23B      LCDDATA20bits.S23C3
+#define CHAR_SYM23C      LCDDATA14bits.S23C2
+#define CHAR_SYM23D      LCDDATA0bits.S00C0
+#define CHAR_SYM23E      LCDDATA18bits.S01C3
+#define CHAR_SYM23F      LCDDATA12bits.S01C2
+#define CHAR_SYM23G      LCDDATA15bits.S28C2
 
 
 /**
@@ -221,6 +263,48 @@
 #define BAR1_SYM15ON     BAR1_SYM15 = 1
 #define BAR2_SYM16ON     BAR2_SYM16 = 1
 #define BAR3_SYM17ON     BAR3_SYM17 = 1
+#define CHAR_SYM18AON     CHAR_SYM18A = 1
+#define CHAR_SYM18BON     CHAR_SYM18B = 1
+#define CHAR_SYM18CON     CHAR_SYM18C = 1
+#define CHAR_SYM18DON     CHAR_SYM18D = 1
+#define CHAR_SYM18EON     CHAR_SYM18E = 1
+#define CHAR_SYM18FON     CHAR_SYM18F = 1
+#define CHAR_SYM18GON     CHAR_SYM18G = 1
+#define CHAR_SYM19AON     CHAR_SYM19A = 1
+#define CHAR_SYM19BON     CHAR_SYM19B = 1
+#define CHAR_SYM19CON     CHAR_SYM19C = 1
+#define CHAR_SYM19DON     CHAR_SYM19D = 1
+#define CHAR_SYM19EON     CHAR_SYM19E = 1
+#define CHAR_SYM19FON     CHAR_SYM19F = 1
+#define CHAR_SYM19GON     CHAR_SYM19G = 1
+#define CHAR_SYM20AON     CHAR_SYM20A = 1
+#define CHAR_SYM20BON     CHAR_SYM20B = 1
+#define CHAR_SYM20CON     CHAR_SYM20C = 1
+#define CHAR_SYM20DON     CHAR_SYM20D = 1
+#define CHAR_SYM20EON     CHAR_SYM20E = 1
+#define CHAR_SYM20FON     CHAR_SYM20F = 1
+#define CHAR_SYM20GON     CHAR_SYM20G = 1
+#define CHAR_SYM21AON     CHAR_SYM21A = 1
+#define CHAR_SYM21BON     CHAR_SYM21B = 1
+#define CHAR_SYM21CON     CHAR_SYM21C = 1
+#define CHAR_SYM21DON     CHAR_SYM21D = 1
+#define CHAR_SYM21EON     CHAR_SYM21E = 1
+#define CHAR_SYM21FON     CHAR_SYM21F = 1
+#define CHAR_SYM21GON     CHAR_SYM21G = 1
+#define CHAR_SYM22AON     CHAR_SYM22A = 1
+#define CHAR_SYM22BON     CHAR_SYM22B = 1
+#define CHAR_SYM22CON     CHAR_SYM22C = 1
+#define CHAR_SYM22DON     CHAR_SYM22D = 1
+#define CHAR_SYM22EON     CHAR_SYM22E = 1
+#define CHAR_SYM22FON     CHAR_SYM22F = 1
+#define CHAR_SYM22GON     CHAR_SYM22G = 1
+#define CHAR_SYM23AON     CHAR_SYM23A = 1
+#define CHAR_SYM23BON     CHAR_SYM23B = 1
+#define CHAR_SYM23CON     CHAR_SYM23C = 1
+#define CHAR_SYM23DON     CHAR_SYM23D = 1
+#define CHAR_SYM23EON     CHAR_SYM23E = 1
+#define CHAR_SYM23FON     CHAR_SYM23F = 1
+#define CHAR_SYM23GON     CHAR_SYM23G = 1
 
 /**
     Defines: To Turn off a pixel (a segment from a digit or a special character)
@@ -279,6 +363,48 @@
 #define BAR1_SYM15OFF    BAR1_SYM15 = 0
 #define BAR2_SYM16OFF    BAR2_SYM16 = 0
 #define BAR3_SYM17OFF    BAR3_SYM17 = 0
+#define CHAR_SYM18AOFF    CHAR_SYM18A = 0
+#define CHAR_SYM18BOFF    CHAR_SYM18B = 0
+#define CHAR_SYM18COFF    CHAR_SYM18C = 0
+#define CHAR_SYM18DOFF    CHAR_SYM18D = 0
+#define CHAR_SYM18EOFF    CHAR_SYM18E = 0
+#define CHAR_SYM18FOFF    CHAR_SYM18F = 0
+#define CHAR_SYM18GOFF    CHAR_SYM18G = 0
+#define CHAR_SYM19AOFF    CHAR_SYM19A = 0
+#define CHAR_SYM19BOFF    CHAR_SYM19B = 0
+#define CHAR_SYM19COFF    CHAR_SYM19C = 0
+#define CHAR_SYM19DOFF    CHAR_SYM19D = 0
+#define CHAR_SYM19EOFF    CHAR_SYM19E = 0
+#define CHAR_SYM19FOFF    CHAR_SYM19F = 0
+#define CHAR_SYM19GOFF    CHAR_SYM19G = 0
+#define CHAR_SYM20AOFF    CHAR_SYM20A = 0
+#define CHAR_SYM20BOFF    CHAR_SYM20B = 0
+#define CHAR_SYM20COFF    CHAR_SYM20C = 0
+#define CHAR_SYM20DOFF    CHAR_SYM20D = 0
+#define CHAR_SYM20EOFF    CHAR_SYM20E = 0
+#define CHAR_SYM20FOFF    CHAR_SYM20F = 0
+#define CHAR_SYM20GOFF    CHAR_SYM20G = 0
+#define CHAR_SYM21AOFF    CHAR_SYM21A = 0
+#define CHAR_SYM21BOFF    CHAR_SYM21B = 0
+#define CHAR_SYM21COFF    CHAR_SYM21C = 0
+#define CHAR_SYM21DOFF    CHAR_SYM21D = 0
+#define CHAR_SYM21EOFF    CHAR_SYM21E = 0
+#define CHAR_SYM21FOFF    CHAR_SYM21F = 0
+#define CHAR_SYM21GOFF    CHAR_SYM21G = 0
+#define CHAR_SYM22AOFF    CHAR_SYM22A = 0
+#define CHAR_SYM22BOFF    CHAR_SYM22B = 0
+#define CHAR_SYM22COFF    CHAR_SYM22C = 0
+#define CHAR_SYM22DOFF    CHAR_SYM22D = 0
+#define CHAR_SYM22EOFF    CHAR_SYM22E = 0
+#define CHAR_SYM22FOFF    CHAR_SYM22F = 0
+#define CHAR_SYM22GOFF    CHAR_SYM22G = 0
+#define CHAR_SYM23AOFF    CHAR_SYM23A = 0
+#define CHAR_SYM23BOFF    CHAR_SYM23B = 0
+#define CHAR_SYM23COFF    CHAR_SYM23C = 0
+#define CHAR_SYM23DOFF    CHAR_SYM23D = 0
+#define CHAR_SYM23EOFF    CHAR_SYM23E = 0
+#define CHAR_SYM23FOFF    CHAR_SYM23F = 0
+#define CHAR_SYM23GOFF    CHAR_SYM23G = 0
 /**
   Section: Interface Routines
 */
@@ -519,52 +645,6 @@ void LCD_SetPowerDistribution (unsigned int value);
 */
 bool LCD_IsActive (void);
 
-/**
-    @Summary
-        Return true if the write is disabled. 
-        
-    @Description
-        This method returns the status of WERR bit. This is set when the user attepts to write
-        when the write is disabled.
-        
-    @Preconditions
-        None.
-
-    @Param
-        Node.
-
-    @Returns
-        true  - If the write is disabled and the user attempts to write. 
-        false - If everithing works properly. 
-      
-    @Example
-        <code>
-   
-        </code>     
-*/
-bool LCD_HasWriteFailureOccurred (void);
-
-/**
-    @Summary
-        
-    @Description
-        
-    @Preconditions
-        None.
-
-    @Param
-        Node.
-
-    @Returns
-        true  - 
-        false - 
-      
-    @Example
-        <code>
-   
-        </code>     
-*/
-bool LCD_IsWritingAllowed (void);
 
 
 /**
@@ -915,4 +995,352 @@ void LCD_DisplayOff_DIG_SYM05Num();
         </code>      
 */
 void LCD_DIG_SYM05Num (unsigned char num);
+/**
+  @Summary
+    Displays on all the defined pixels for digit CHAR_SYM18
+
+  @Description
+    This routine displays on all the defined pixels for digit CHAR_SYM18
+
+  @Returns
+    None
+
+  @Param
+    None
+  
+  @Example
+        <code>
+        void LCD_DisplayOn_CHAR_SYM18Num();
+        </code>
+*/
+void LCD_DisplayOn_CHAR_SYM18Num();
+
+/**
+  @Summary
+    Displays off all the defined pixels for digit CHAR_SYM18
+
+  @Description
+    This routine displays off all the defined pixels for digit CHAR_SYM18
+
+  @Returns
+    None
+
+  @Param
+    None
+  
+  @Example
+        <code>
+        void LCD_DisplayOff_CHAR_SYM18Num();
+        </code>
+*/
+void LCD_DisplayOff_CHAR_SYM18Num();    
+/**
+  @Summary
+    Display a char for digit CHAR_SYM18
+
+  @Description
+    This routine displays a specific char for lcd's digit CHAR_SYM18
+
+  @Returns
+    None
+
+  @Param
+    The needed char
+  
+  @Example
+        <code>
+        void LCD_CHAR_SYM18Num ('5');
+        </code>      
+*/
+void LCD_CHAR_SYM18Num (unsigned char num);
+/**
+  @Summary
+    Displays on all the defined pixels for digit CHAR_SYM19
+
+  @Description
+    This routine displays on all the defined pixels for digit CHAR_SYM19
+
+  @Returns
+    None
+
+  @Param
+    None
+  
+  @Example
+        <code>
+        void LCD_DisplayOn_CHAR_SYM19Num();
+        </code>
+*/
+void LCD_DisplayOn_CHAR_SYM19Num();
+
+/**
+  @Summary
+    Displays off all the defined pixels for digit CHAR_SYM19
+
+  @Description
+    This routine displays off all the defined pixels for digit CHAR_SYM19
+
+  @Returns
+    None
+
+  @Param
+    None
+  
+  @Example
+        <code>
+        void LCD_DisplayOff_CHAR_SYM19Num();
+        </code>
+*/
+void LCD_DisplayOff_CHAR_SYM19Num();    
+/**
+  @Summary
+    Display a char for digit CHAR_SYM19
+
+  @Description
+    This routine displays a specific char for lcd's digit CHAR_SYM19
+
+  @Returns
+    None
+
+  @Param
+    The needed char
+  
+  @Example
+        <code>
+        void LCD_CHAR_SYM19Num ('5');
+        </code>      
+*/
+void LCD_CHAR_SYM19Num (unsigned char num);
+/**
+  @Summary
+    Displays on all the defined pixels for digit CHAR_SYM20
+
+  @Description
+    This routine displays on all the defined pixels for digit CHAR_SYM20
+
+  @Returns
+    None
+
+  @Param
+    None
+  
+  @Example
+        <code>
+        void LCD_DisplayOn_CHAR_SYM20Num();
+        </code>
+*/
+void LCD_DisplayOn_CHAR_SYM20Num();
+
+/**
+  @Summary
+    Displays off all the defined pixels for digit CHAR_SYM20
+
+  @Description
+    This routine displays off all the defined pixels for digit CHAR_SYM20
+
+  @Returns
+    None
+
+  @Param
+    None
+  
+  @Example
+        <code>
+        void LCD_DisplayOff_CHAR_SYM20Num();
+        </code>
+*/
+void LCD_DisplayOff_CHAR_SYM20Num();    
+/**
+  @Summary
+    Display a char for digit CHAR_SYM20
+
+  @Description
+    This routine displays a specific char for lcd's digit CHAR_SYM20
+
+  @Returns
+    None
+
+  @Param
+    The needed char
+  
+  @Example
+        <code>
+        void LCD_CHAR_SYM20Num ('5');
+        </code>      
+*/
+void LCD_CHAR_SYM20Num (unsigned char num);
+/**
+  @Summary
+    Displays on all the defined pixels for digit CHAR_SYM21
+
+  @Description
+    This routine displays on all the defined pixels for digit CHAR_SYM21
+
+  @Returns
+    None
+
+  @Param
+    None
+  
+  @Example
+        <code>
+        void LCD_DisplayOn_CHAR_SYM21Num();
+        </code>
+*/
+void LCD_DisplayOn_CHAR_SYM21Num();
+
+/**
+  @Summary
+    Displays off all the defined pixels for digit CHAR_SYM21
+
+  @Description
+    This routine displays off all the defined pixels for digit CHAR_SYM21
+
+  @Returns
+    None
+
+  @Param
+    None
+  
+  @Example
+        <code>
+        void LCD_DisplayOff_CHAR_SYM21Num();
+        </code>
+*/
+void LCD_DisplayOff_CHAR_SYM21Num();    
+/**
+  @Summary
+    Display a char for digit CHAR_SYM21
+
+  @Description
+    This routine displays a specific char for lcd's digit CHAR_SYM21
+
+  @Returns
+    None
+
+  @Param
+    The needed char
+  
+  @Example
+        <code>
+        void LCD_CHAR_SYM21Num ('5');
+        </code>      
+*/
+void LCD_CHAR_SYM21Num (unsigned char num);
+/**
+  @Summary
+    Displays on all the defined pixels for digit CHAR_SYM22
+
+  @Description
+    This routine displays on all the defined pixels for digit CHAR_SYM22
+
+  @Returns
+    None
+
+  @Param
+    None
+  
+  @Example
+        <code>
+        void LCD_DisplayOn_CHAR_SYM22Num();
+        </code>
+*/
+void LCD_DisplayOn_CHAR_SYM22Num();
+
+/**
+  @Summary
+    Displays off all the defined pixels for digit CHAR_SYM22
+
+  @Description
+    This routine displays off all the defined pixels for digit CHAR_SYM22
+
+  @Returns
+    None
+
+  @Param
+    None
+  
+  @Example
+        <code>
+        void LCD_DisplayOff_CHAR_SYM22Num();
+        </code>
+*/
+void LCD_DisplayOff_CHAR_SYM22Num();    
+/**
+  @Summary
+    Display a char for digit CHAR_SYM22
+
+  @Description
+    This routine displays a specific char for lcd's digit CHAR_SYM22
+
+  @Returns
+    None
+
+  @Param
+    The needed char
+  
+  @Example
+        <code>
+        void LCD_CHAR_SYM22Num ('5');
+        </code>      
+*/
+void LCD_CHAR_SYM22Num (unsigned char num);
+/**
+  @Summary
+    Displays on all the defined pixels for digit CHAR_SYM23
+
+  @Description
+    This routine displays on all the defined pixels for digit CHAR_SYM23
+
+  @Returns
+    None
+
+  @Param
+    None
+  
+  @Example
+        <code>
+        void LCD_DisplayOn_CHAR_SYM23Num();
+        </code>
+*/
+void LCD_DisplayOn_CHAR_SYM23Num();
+
+/**
+  @Summary
+    Displays off all the defined pixels for digit CHAR_SYM23
+
+  @Description
+    This routine displays off all the defined pixels for digit CHAR_SYM23
+
+  @Returns
+    None
+
+  @Param
+    None
+  
+  @Example
+        <code>
+        void LCD_DisplayOff_CHAR_SYM23Num();
+        </code>
+*/
+void LCD_DisplayOff_CHAR_SYM23Num();    
+/**
+  @Summary
+    Display a char for digit CHAR_SYM23
+
+  @Description
+    This routine displays a specific char for lcd's digit CHAR_SYM23
+
+  @Returns
+    None
+
+  @Param
+    The needed char
+  
+  @Example
+        <code>
+        void LCD_CHAR_SYM23Num ('5');
+        </code>      
+*/
+void LCD_CHAR_SYM23Num (unsigned char num);
 #endif /*_LCD_H*/
