@@ -54,6 +54,7 @@
 #include <conio.h>
 #include "interrupt_manager.h"
 #include "fvr.h"
+#include "memory.h"
 #include "rtcc.h"
 #include "tmr0.h"
 #include "eusart1.h"

@@ -70,13 +70,13 @@ void RTCC_Initialize(void)
 
     if(!RTCCTimeInitialized())
     {
-       // set RTCC time 2020-07-23 12-40-30
+       // set RTCC time 2020-10-15 15-44-30
         YEAR     = 0x20;   // year
-        MONTH    = 0x7;    // month 
+        MONTH    = 0x10;    // month 
         WEEKDAY  = 0x4;    // weekday 
-        DAY      = 0x23;    // day
-        HOURS    = 0x12;    // hours 
-        MINUTES  = 0x40;    // minutes 
+        DAY      = 0x15;    // day
+        HOURS    = 0x15;    // hours 
+        MINUTES  = 0x44;    // minutes 
         SECONDS  = 0x30;    // seconds 
         rtccTimeInitialized = true;
     }
@@ -89,6 +89,10 @@ void RTCC_Initialize(void)
     // CAL 0; 
     RTCCAL = 0x00;
     
+    // Enable RTCC
+    RTCCONbits.RTCEN = 1;
+    while(!RTCCONbits.RTCEN);
+
     // Disable write operations on RTCC timer registers
     __builtin_clear_RTCWREN();
 

@@ -56,6 +56,7 @@ void LCD_DIG5(unsigned char chr);
 void main(void)
 {
     uint8_t count,c_count;
+    struct tm ctime;
     // initialize the device
     SYSTEM_Initialize();
 
@@ -79,12 +80,14 @@ void main(void)
     while (1)
     {
         // Add your application code
-//        LCD_DIG_SYM00Num(0);
-//        LCD_DIG_SYM01Num(1);
-//        LCD_DIG_SYM02Num(2);
-//        LCD_DIG_SYM03Num(3);
-//        LCD_DIG_SYM04Num(4);
-//        LCD_DIG_SYM05Num(5);
+        if(RTCC_TimeGet(&ctime)){
+            LCD_DIG0((HOURS >> 4) & 0x0F);
+            LCD_DIG1(HOURS & 0x0F);
+            LCD_DIG2((MINUTES >> 4) & 0x0F);
+            LCD_DIG3(MINUTES & 0x0F);
+            LCD_DIG4((SECONDS >> 4) & 0x0F);
+            LCD_DIG5(SECONDS & 0x0F);
+        }
         
 //        LCD_DisplayOn_DIG_SYM00Num();
 //        LCD_DisplayOn_DIG_SYM01Num();
@@ -93,23 +96,23 @@ void main(void)
 //        LCD_DisplayOn_DIG_SYM04Num();
 //        LCD_DisplayOn_DIG_SYM05Num();
         
-        LCD_DIG0(c_count);
-        if(++c_count > 'Z') c_count = 'A';
-        LCD_DIG1(c_count);
-        if(++c_count > 'Z') c_count = 'A';
-        LCD_DIG2(c_count);
-        if(++c_count > 'Z') c_count = 'A';
-        LCD_DIG3(c_count);
-        if(++c_count > 'Z') c_count = 'A';
-        LCD_DIG4(c_count);
-        if(++c_count > 'Z') c_count = 'A';
-        LCD_DIG5(c_count);
-        if(++c_count > 'Z') c_count = 'A';
+//        LCD_DIG0(c_count);
+//        if(++c_count > 'Z') c_count = 'A';
+//        LCD_DIG1(c_count);
+//        if(++c_count > 'Z') c_count = 'A';
+//        LCD_DIG2(c_count);
+//        if(++c_count > 'Z') c_count = 'A';
+//        LCD_DIG3(c_count);
+//        if(++c_count > 'Z') c_count = 'A';
+//        LCD_DIG4(c_count);
+//        if(++c_count > 'Z') c_count = 'A';
+//        LCD_DIG5(c_count);
+//        if(++c_count > 'Z') c_count = 'A';
         
         //COL_SYM06ON;
-        //COL_SYM07ON;
+        COL_SYM07ON;
         //COL_SYM08ON;
-        //COL_SYM09ON;
+        COL_SYM09ON;
         
 //        DOT_SYM11ON;
 //        DOT_SYM12ON;
@@ -124,9 +127,9 @@ void main(void)
         if(LCD_IsActive()){
             TEST_Toggle();
         }
-        __delay_ms(2000);
+        __delay_ms(100);
         
-        if(++count > 9) count = 0;
+        //if(++count > 9) count = 0;
     }
 }
 
